@@ -27,7 +27,7 @@ However, his trainer told him that what he did is not Object Oriented programmin
 - Try to articulate problems with Shivam's OOP solution. (Write it somewhere and share it with your trainer)
 - Fork the project and fix the design related problem with Shivam's OOP solution. Share that with your trainer too.
 
-Problem Articulatio
+Problem Articulation
 - Changes in Point class
   - Removed getters and setters
   - Added 2 private methods for calculating X and Y difference between the co-ordinates of instance point and parameter point i.e. `calculateDiffInXWRT(Point p)` and `calculateDiffInYWRT(Point p)` resp.
