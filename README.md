@@ -26,3 +26,24 @@ He thought it'll be a good idea to convert this to Object Oriented Programming. 
 However, his trainer told him that what he did is not Object Oriented programming and asked Shivam to try again. 
 - Try to articulate problems with Shivam's OOP solution. (Write it somewhere and share it with your trainer)
 - Fork the project and fix the design related problem with Shivam's OOP solution. Share that with your trainer too.
+
+Problem Articulatio
+- Changes in Point class
+  - Removed getters and setters
+  - Added 2 private methods for calculating X and Y difference between the co-ordinates of instance point and parameter point i.e. `calculateDiffInXWRT(Point p)` and `calculateDiffInYWRT(Point p)` resp.
+  - Added 2 public methods `distanceFrom(Point p)` and `directionWRT(Point p)` to be tested upon which look like this.
+  ```java
+  public double distanceFrom(Point p) {
+        return Math.sqrt(Math.pow(calculateDiffInXWRT(p), 2) + Math.pow(calculateDiffInYWRT(p), 2));
+    }
+    public double directionWRT(Point p) {
+        return Math.atan2(calculateDiffInYWRT(p), calculateDiffInXWRT(p));
+    }
+    ```
+- There is no need of `org.oop.DistanceAndDirectionCalculator` class as now, it will only be used for calling the methods of Point class. Hence, **removed**
+- Deleted `org.oop.DistanceAndDirectionCalculatorTest`
+- Added a new class `org.oops.PointTest` where distance and direction would be calculated as follows
+  ```java
+  origin.distanceFrom(point1)
+  origin.directionWRT(point1)
+  ```
