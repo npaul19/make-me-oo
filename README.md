@@ -56,7 +56,7 @@ My Implementation
     ```
 - There is no need of `org.oop.DistanceAndDirectionCalculator` class as now, it will only be used for calling the methods of Point class. Hence, **removed**
 - Deleted `org.oop.DistanceAndDirectionCalculatorTest`
-- Added a new class `org.oops.PointTest` where distance and direction would be calculated as follows
+- Added a new test class `org.oops.PointTest` where distance and direction would be calculated as follows
   ```java
   origin.distanceFrom(point1)
   origin.directionWRT(point1)
