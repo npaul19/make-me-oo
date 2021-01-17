@@ -27,7 +27,21 @@ However, his trainer told him that what he did is not Object Oriented programmin
 - Try to articulate problems with Shivam's OOP solution. (Write it somewhere and share it with your trainer)
 - Fork the project and fix the design related problem with Shivam's OOP solution. Share that with your trainer too.
 
-Problem Articulation
+Problems in Shivam's Implementation
+- AAA format not followed in Test class
+- Setters in Point class not used
+- No encapsulation in DistanceAndDirectionCalculator as the methods are static
+- DistanceAndDirectionCalculator is like having procedural code wrapped up in a class
+- It does not follow the 4 rules of simple design
+  - Passes the tests (It Works)
+  - Reveals intention - DistanceAndDirectionCalculator class does not reveal intention clearly
+  - No duplication - has duplication of code while calculating difference between X and y co-ordinates of the 2 points. the logic could be extracted in a private method and reused.
+  - Fewest elements - Unnecessary use of DistanceAndDirectionCalculator class, Point class was sufficient for satisfying the purpose of the problem
+  - AssertThat could be more useful in Test class
+
+
+
+My Implementation
 - Changes in Point class
   - Removed getters and setters
   - Added 2 private methods for calculating X and Y difference between the co-ordinates of instance point and parameter point i.e. `calculateDiffInXWRT(Point p)` and `calculateDiffInYWRT(Point p)` resp.
